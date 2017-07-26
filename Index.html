@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div ng-app="">
+        <h1> Complete the MadLib below</h1>
+        <input ng-model="adjective" type="text" placeholder="adjective">
+        <input ng-model="food" type="text" placeholder="food">
+        <input ng-model="name" type="text" placeholder="name">
+        <h2> Our school cafeteria serves {{adjective}} {{food}}.  {{food}} is my favorite.  The lunch lady's name is {{name}}</h2>
+
+        <h1>The cost of school lunch</h1>
+        <input ng-model="qty" text="number" placeholder="quantity">
+        <input ng-model="cost" text="number" placeholder="cost">
+        <h2 ng-if="qty && cost">The total price is {{qty*cost}}</h2>
+
+        <h1>Did you like your lunch?</h1>
+        <input ng-model="lunch" text="text">
+        <h2 ng-if="lunch === 'yes'">:)</h2>
+        <h2 ng-if="lunch === 'no' ">:(</h2>
+    </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  </body>
+</html>
