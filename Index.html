@@ -10,7 +10,8 @@
         <input ng-model="adjective" type="text" placeholder="adjective">
         <input ng-model="food" type="text" placeholder="food">
         <input ng-model="name" type="text" placeholder="name">
-        <h2> Our school cafeteria serves {{adjective}} {{food}}.  {{food}} is my favorite.  The lunch lady's name is {{name}}</h2>
+        <h2> Our school cafeteria serves {{adjective}} {{food}}.  <span ng-if="!food">_____</span>
+          <span ng-if="food">{{food}} </span>is my favorite.  The lunch lady's name is {{name}}</h2>
 
         <h1>The cost of school lunch</h1>
         <h2>Menu</h2>
