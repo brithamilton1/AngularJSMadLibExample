@@ -13,6 +13,12 @@
         <h2> Our school cafeteria serves {{adjective}} {{food}}.  {{food}} is my favorite.  The lunch lady's name is {{name}}</h2>
 
         <h1>The cost of school lunch</h1>
+        <h2>Menu</h2>
+        <h3>Hamburger</h3>
+        <input ng-model="qty" text="number" placeholder="quantity">
+        <input ng-model="cost" text="number" placeholder="cost">
+        <h2 ng-if="qty && cost">The total price is {{qty*cost}}</h2>
+        <h3>Hotdog</h3>
         <input ng-model="qty" text="number" placeholder="quantity">
         <input ng-model="cost" text="number" placeholder="cost">
         <h2 ng-if="qty && cost">The total price is {{qty*cost}}</h2>
